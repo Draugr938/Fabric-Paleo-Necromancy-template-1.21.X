@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "paleonecromancy",
+	"version": "${version}",
+	"name": "Paleo Necromancy",
+	"description": "Resurrect pre-historic creatures with necromancy, warping them into terrifying abominations.",
+	"authors": [
+		"TheCrumpetKaiser"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/paleonecromancy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.thomas.paleonecromancy.PaleoNecromancy"
+		],
+		"fabric-datagen": [
+			"net.thomas.paleonecromancy.PaleoNecromancyDataGenerator"
+		],
+		"client": [
+			"net.thomas.paleonecromancy.PaleoNecromancyClient"
+		]
+	},
+	"mixins": [
+		"paleonecromancy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
